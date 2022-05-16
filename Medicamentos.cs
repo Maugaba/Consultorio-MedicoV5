@@ -10,8 +10,16 @@ namespace Consultorio_Medico
         public string Codigo_Medicamento { get; set; }
         public string Ingrediente_Generico { get; set; }
         public string Laboratorio { get; set; }
-        public List<Enfermedades> enfermedades { get; set; }
+        public List<Enfermedades> Enfermedades { get; set; }
         public string Dosis { get; set; }
         public string Horas_de_administracion { get; set; }
+
+        public Enfermedades Enfermedades1
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 }
