@@ -10,6 +10,31 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <h1>Pacientes</h1>
+            <p>
+                DPI del paciente:
+                <asp:DropDownList ID="DropDownListDPI" runat="server">
+                </asp:DropDownList>
+            </p>
+            <p>
+                Nombre:
+                <asp:TextBox ID="TextBoxNombre" runat="server"></asp:TextBox>
+            </p>
+            <p>
+                Apellido:
+                <asp:TextBox ID="TextBoxApellido" runat="server"></asp:TextBox>
+            </p>
+            <p>
+                Dirección:
+                <asp:TextBox ID="TextBoxDireccion" runat="server"></asp:TextBox>
+            </p>
+            <p>
+                Fecha de nacimiento: <asp:Calendar ID="CalendarNacimiento" runat="server"></asp:Calendar>
+            </p>
+            <p>
+                Teléfono:
+                <asp:TextBox ID="TextBoxTelefono" runat="server"></asp:TextBox>
+            </p>
         </div>
     </form>
 </body>

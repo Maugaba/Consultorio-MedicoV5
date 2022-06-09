@@ -8,8 +8,23 @@
     <title></title>
 </head>
 <body>
+    <h1>Agenda</h1>
     <form id="form1" runat="server">
+        <p>
+            DP1 del paciente:
+            <asp:TextBox ID="TextBoxDP1" runat="server"></asp:TextBox>
+        </p>
+        <p>
+            Fecha:
+            <asp:Calendar ID="CalendarFecha" runat="server"></asp:Calendar>
+        </p>
+        <p>
+            Hora de inicio:
+            <asp:TextBox ID="TextBoxHoraIncio" runat="server"></asp:TextBox>
+        </p>
         <div>
+            Hora de finalización:
+            <asp:TextBox ID="TextBoxHoraFin" runat="server"></asp:TextBox>
         </div>
     </form>
 </body>
