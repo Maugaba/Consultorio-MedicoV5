@@ -144,7 +144,8 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="ClassDiagram1.cd" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
-    <Content Include="Historial_Pacientes.aspx" />
+    <Content Include="Consulta_Pacientes.aspx" />
+    <Content Include="HistorialConsultaPaciente.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Logout.aspx" />
     <Content Include="Medicamentos.aspx" />
@@ -227,13 +228,20 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="HistorialPaciente.cs" />
-    <Compile Include="Historial_Pacientes.aspx.cs">
-      <DependentUpon>Historial_Pacientes.aspx</DependentUpon>
+    <Compile Include="HistorialConsultaPaciente.aspx.cs">
+      <DependentUpon>HistorialConsultaPaciente.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Historial_Pacientes.aspx.designer.cs">
-      <DependentUpon>Historial_Pacientes.aspx</DependentUpon>
+    <Compile Include="HistorialConsultaPaciente.aspx.designer.cs">
+      <DependentUpon>HistorialConsultaPaciente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HistorialPaciente.cs" />
+    <Compile Include="Consulta_Pacientes.aspx.cs">
+      <DependentUpon>Consulta_Pacientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consulta_Pacientes.aspx.designer.cs">
+      <DependentUpon>Consulta_Pacientes.aspx</DependentUpon>
     </Compile>
     <Compile Include="ImagenesConsulta.cs" />
     <Compile Include="Login.aspx.cs">

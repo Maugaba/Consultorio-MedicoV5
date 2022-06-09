@@ -18,5 +18,10 @@ namespace Consultorio_Medico
                 Response.Redirect("Contact", true);
             }
         }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("HistorialConsultaPaciente", true);
+        }
     }
 }

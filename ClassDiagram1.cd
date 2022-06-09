@@ -15,35 +15,35 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Consultorio_Medico.HistorialPaciente">
-    <Position X="5.5" Y="0.75" Width="1.5" />
+    <Position X="4" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAQAAAAAhAAAICQAABQAAAAAAEAQAEAIAAAAAAA=</HashCode>
       <FileName>HistorialPaciente.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Consultorio_Medico.Sintomas">
-    <Position X="9" Y="0.75" Width="1.5" />
+    <Position X="6.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAIAAABAAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
       <FileName>Sintomas.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Consultorio_Medico.ImagenesConsulta">
-    <Position X="7.25" Y="3" Width="1.5" />
+    <Position X="4" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
       <FileName>ImagenesConsulta.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Consultorio_Medico.Medicamentos">
-    <Position X="7.25" Y="0.75" Width="1.5" />
+    <Position X="9" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAEAAAAgAAABgAAQAAAAAAAACAAAAAA=</HashCode>
       <FileName>Medicamentos.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Consultorio_Medico.Enfermedades">
-    <Position X="9" Y="2.5" Width="1.5" />
+    <Position X="9" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
       <FileName>Enfermedades.cs</FileName>
