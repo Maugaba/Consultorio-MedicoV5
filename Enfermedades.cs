@@ -7,6 +7,7 @@ namespace Consultorio_Medico
 {
     public class Enfermedades
     {
+        public string id { get; set; }
         public string Nombre_Enfermedad { get; set; }
     }
 }
