@@ -44,6 +44,11 @@ namespace Consultorio_Medico
 
         protected void Button1_Click1(object sender, EventArgs e)
         {
+            Response.Redirect("default", true);
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
 
         }
     }
