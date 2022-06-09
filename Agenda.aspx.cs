@@ -37,10 +37,12 @@ namespace Consultorio_Medico
             Agenda agenda = new Agenda();
             agenda.DPI_del_paciente = DropDownListDPIPaciente.Text;
             agenda.Fecha = CalendarFecha.SelectedDate;
-            agenda.Hora_de_inicio_cita = TextBoxHoraIncio.Text;
-            agenda.Hora_de_finalizacion_cita = TextBoxHoraFin.Text;
+            agenda.Hora_de_inicio_cita = TextBoxHoraIncio.Text = "";
+            agenda.Hora_de_finalizacion_cita = TextBoxHoraFin.Text = "";
             agendas.Add(agenda);
             Guardar_Json();
+
+            Response.Write("<script>alert('¡Cita creada correctamente!')</script>");
         }
 
         void Guardar_Json()
