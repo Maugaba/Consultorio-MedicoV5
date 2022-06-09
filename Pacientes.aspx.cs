@@ -20,19 +20,14 @@ namespace Consultorio_Medico
         protected void Button1_Click(object sender, EventArgs e)
         {
             Pacientes paciente = new Pacientes();
-            paciente.DPI = TextBoxDPIPaciente.Text;
-            paciente.Nombre = TextBoxNombre.Text;
-            paciente.Apellido = TextBoxApellido.Text;
-            paciente.Direccion = TextBoxDireccion.Text;
+            paciente.DPI = TextBoxDPIPaciente.Text = "";
+            paciente.Nombre = TextBoxNombre.Text = "";
+            paciente.Apellido = TextBoxApellido.Text = "";
+            paciente.Direccion = TextBoxDireccion.Text = "";
             paciente.Fecha_de_Nacimiento = CalendarNacimiento.SelectedDate;
-            paciente.Telefono = TextBoxTelefono.Text;
+            paciente.Telefono = TextBoxTelefono.Text = "";
             pacientes.Add(paciente);
             Guardar_Json();
-            TextBoxDPIPaciente.Text = "";
-            TextBoxNombre.Text = "";
-            TextBoxApellido.Text = "";
-            TextBoxDireccion.Text = "";
-            TextBoxTelefono.Text = "";
             Response.Write("<script>alert('¡Paciente registrado con éxito!')</script>"); 
         }
         void Guardar_Json()
@@ -43,9 +38,9 @@ namespace Consultorio_Medico
 
         }
 
-        protected void Button2_Click(object sender, EventArgs e)
+        protected System.Void Button1_Click(System.Object sender, System.EventArgs e)
         {
-            Response.Redirect("default", true);
+
         }
     }
 }
