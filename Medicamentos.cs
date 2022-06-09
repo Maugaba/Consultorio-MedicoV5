@@ -14,12 +14,5 @@ namespace Consultorio_Medico
         public string Dosis { get; set; }
         public string Horas_de_administracion { get; set; }
 
-        public Enfermedades Enfermedades1
-        {
-            get => default;
-            set
-            {
-            }
-        }
     }
 }
