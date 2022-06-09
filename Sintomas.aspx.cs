@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Security;
@@ -10,6 +12,7 @@ namespace Consultorio_Medico
 {
     public partial class Sintomas1 : System.Web.UI.Page
     {
+        static List<Sintomas> listsintomas = new List<Sintomas>();
         protected void Page_Load(object sender, EventArgs e)
         {
             var identidad = (FormsIdentity)Context.User.Identity;
@@ -17,6 +20,22 @@ namespace Consultorio_Medico
             {
                 Response.Redirect("Contact", true);
             }
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Sintomas sintomas = new Sintomas();
+            sintomas.Codigo_Sintoma = TextBoxCodigoSintoma.Text;
+            sintomas.Nombre_Sintoma = TextBoxNombreSintoma.Text;
+            sintomas.Descripcion_Sintoma = TextBoxDescripcionSintoma.Text;
+            listsintomas.Add(sintomas);
+            Guardar_Json();
+        }
+        void Guardar_Json()
+        {
+            string json = JsonConvert.SerializeObject(listsintomas);
+            string archivo = Server.MapPath("Sintomas.json");
+            File.WriteAllText(archivo, json);
         }
     }
 }

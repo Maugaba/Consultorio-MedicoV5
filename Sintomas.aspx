@@ -21,8 +21,13 @@
             Descripcion del sintoma:
         </p>
         <p>
-            <asp:TextBox ID="TextBoxDescripcionSintoma" runat="server" Height="306px" Width="342px"></asp:TextBox>
+            <asp:TextBox ID="TextBoxDescripcionSintoma" runat="server" Height="126px" Width="348px" Columns="10" TextMode="MultiLine"></asp:TextBox>
         </p>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:Button ID="Button1" runat="server" Text="Agregar Sintoma" />
+        </p>
+        <p>
+            &nbsp;</p>
     </form>
 </body>
 </html>
