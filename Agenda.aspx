@@ -11,8 +11,9 @@
     <h1>Agenda</h1>
     <form id="form1" runat="server">
         <p>
-            DP1 del paciente:
-            <asp:TextBox ID="TextBoxDP1" runat="server"></asp:TextBox>
+            DP1 del paciente:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:DropDownList ID="DropDownListDPIPaciente" runat="server" style="margin-bottom: 0px" Width="266px">
+            </asp:DropDownList>
         </p>
         <p>
             Fecha:
@@ -25,6 +26,9 @@
         <div>
             Hora de finalización:
             <asp:TextBox ID="TextBoxHoraFin" runat="server"></asp:TextBox>
+            <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Programar Cita" />
         </div>
     </form>
 </body>

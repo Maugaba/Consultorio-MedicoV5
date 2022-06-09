@@ -13,8 +13,7 @@
             <h1>Pacientes</h1>
             <p>
                 DPI del paciente:
-                <asp:DropDownList ID="DropDownListDPI" runat="server">
-                </asp:DropDownList>
+                <asp:TextBox ID="TextBoxDPIPaciente" runat="server"></asp:TextBox>
             </p>
             <p>
                 Nombre:
@@ -34,6 +33,9 @@
             <p>
                 Teléfono:
                 <asp:TextBox ID="TextBoxTelefono" runat="server"></asp:TextBox>
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Agregar Paciente" />
             </p>
         </div>
     </form>

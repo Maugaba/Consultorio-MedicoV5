@@ -7,7 +7,7 @@ namespace Consultorio_Medico
 {
     public class Pacientes
     {
-        public string NIT { get; set; }
+        public string DPI { get; set; }
         public string Nombre { get; set; }
         public string Apellido { get; set; }
         public string Direccion { get; set; }
