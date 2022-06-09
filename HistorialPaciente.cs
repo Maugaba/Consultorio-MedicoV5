@@ -8,7 +8,7 @@ namespace Consultorio_Medico
     public class HistorialPaciente
     {
         public string ID_consulta { get; set; }
-        public string NIT_del_paciente { get; set; }
+        public string Dpi_del_paciente { get; set; }
         public DateTime Fecha_Consulta { get; set; }
         public string Hora_Consulta { get; set; }
         public string Temperatura { get; set; }
