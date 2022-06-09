@@ -11,7 +11,7 @@ namespace Consultorio_Medico
 {
 
 
-    public partial class Sintomas1
+    public partial class Reportes
     {
 
         /// <summary>
@@ -24,30 +24,48 @@ namespace Consultorio_Medico
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Control TextBoxCodigoSintoma.
+        /// Control ListBoxEnfermedadesComunes.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxCodigoSintoma;
+        protected global::System.Web.UI.WebControls.ListBox ListBoxEnfermedadesComunes;
 
         /// <summary>
-        /// Control TextBoxNombreSintoma.
+        /// Control TextBoxEdadPromedio.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxNombreSintoma;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxEdadPromedio;
 
         /// <summary>
-        /// Control TextBoxDescripcionSintoma.
+        /// Control GridViewMedicamentosRecetados.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxDescripcionSintoma;
+        protected global::System.Web.UI.WebControls.GridView GridViewMedicamentosRecetados;
+
+        /// <summary>
+        /// Control TextBoxTotalDineroFecha1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBoxTotalDineroFecha1;
+
+        /// <summary>
+        /// Control TextBoxTotalDineroFecha2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBoxTotalDineroFecha2;
     }
 }
