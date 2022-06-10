@@ -17,6 +17,7 @@ namespace Consultorio_Medico
         static List<Medicamentos> MedicamentosList = new List<Medicamentos>();
         protected void Page_Load(object sender, EventArgs e)
         {
+            DropDownListenfermedades.Items.Clear();
             var identidad = (FormsIdentity)Context.User.Identity;
             if (identidad.Ticket.UserData != "2")
             {

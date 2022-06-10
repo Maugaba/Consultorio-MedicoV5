@@ -16,6 +16,7 @@ namespace Consultorio_Medico
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            DropDownListDPIPaciente.Items.Clear();
             string archivo = Server.MapPath("Pacientes.json");
             StreamReader jsonStream = File.OpenText(archivo);
             string json = jsonStream.ReadToEnd();

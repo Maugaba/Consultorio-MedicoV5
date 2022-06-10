@@ -1,1 +1,27 @@
-[{"DPI":"1234","Nombre":"Fernando","Apellido":"Galicia","Direccion":"xela","Fecha_de_Nacimiento":"2022-06-15T00:00:00","Telefono":"45457894"},{"DPI":"9875","Nombre":"Paula","Apellido":"Cifuentes","Direccion":"guate","Fecha_de_Nacimiento":"2022-06-18T00:00:00","Telefono":"87722131"},{"DPI":"5461","Nombre":"Diego","Apellido":"Martinez","Direccion":"Mazate","Fecha_de_Nacimiento":"2022-07-04T00:00:00","Telefono":"41523465"}]
+[
+  
+  {
+    "DPI": "1234",
+    "Nombre": "Fernando",
+    "Apellido": "Galicia",
+    "Direccion": "xela",
+    "Fecha_de_Nacimiento": "2002-06-15T00:00:00",
+    "Telefono": "45457894"
+  },
+  {
+    "DPI": "9875",
+    "Nombre": "Paula",
+    "Apellido": "Cifuentes",
+    "Direccion": "guate",
+    "Fecha_de_Nacimiento": "2003-06-18T00:00:00",
+    "Telefono": "87722131"
+  },
+  {
+    "DPI": "5461",
+    "Nombre": "Diego",
+    "Apellido": "Martinez",
+    "Direccion": "Mazate",
+    "Fecha_de_Nacimiento": "2000-07-04T00:00:00",
+    "Telefono": "41523465"
+  }
+]
