@@ -8,5 +8,6 @@ namespace Consultorio_Medico
     public class Medicamentosnombre
     {
         public string nombre { get; set; }
+
     }
 }

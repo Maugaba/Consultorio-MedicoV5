@@ -227,6 +227,7 @@
       <DependentUpon>Enfermedades.aspx</DependentUpon>
     </Compile>
     <Compile Include="Enfermedades.cs" />
+    <Compile Include="Enfermedadnombre.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

@@ -150,15 +150,6 @@ namespace Consultorio_Medico
         protected global::System.Web.UI.WebControls.TextBox TextBoxTemperatura;
 
         /// <summary>
-        /// Control ListBoxEnfermedades.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox ListBoxEnfermedades;
-
-        /// <summary>
         /// Control Label8.
         /// </summary>
         /// <remarks>

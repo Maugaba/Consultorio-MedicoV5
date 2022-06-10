@@ -19,7 +19,7 @@ namespace Consultorio_Medico
         static List<Medicamentos> listmedicamento = new List<Medicamentos>();
         static List<Medicamentosnombre> medicina = new List<Medicamentosnombre>();
         static List<ImagenesConsulta> imagenes = new List<ImagenesConsulta>();
-        static List<Enfermedades> enfermedades = new List<Enfermedades>();
+        static List<Enfermedadnombre> enfermedades = new List<Enfermedadnombre>();
         static List<Enfermedades> listenfermedades = new List<Enfermedades>();
         static List<DineroIngresado> dinero = new List<DineroIngresado>();
         protected void Page_Load(object sender, EventArgs e)
@@ -111,6 +111,16 @@ namespace Consultorio_Medico
             {
                 dinero = JsonConvert.DeserializeObject<List<DineroIngresado>>(json4);
             }
+
+            string archivo5 = Server.MapPath("Consulta.json");
+            StreamReader jsonStream5 = File.OpenText(archivo5);
+            string json5 = jsonStream5.ReadToEnd();
+            jsonStream5.Close();
+
+            if (json5.Length > 0)
+            {
+                listenfermedades = JsonConvert.DeserializeObject<List<Enfermedades>>(json5);
+            }
         }
 
         protected void Button4_Click(object sender, EventArgs e)
@@ -157,9 +167,6 @@ namespace Consultorio_Medico
                     a.conteo++;
                 }
             }
-            string json = JsonConvert.SerializeObject(listsintomas);
-            string archivo = Server.MapPath("Sintomas.json");
-            File.WriteAllText(archivo, json);
             Sintomasnombre sinto = new Sintomasnombre();
             sinto.nombre = DropDownListSintomas.Text;
             sintomas.Add(sinto);
@@ -190,9 +197,6 @@ namespace Consultorio_Medico
                     a.conteo++;
                 }
             }
-            string json = JsonConvert.SerializeObject(listmedicamento);
-            string archivo = Server.MapPath("Medicamento.json");
-            File.WriteAllText(archivo, json);
             Medicamentosnombre med = new Medicamentosnombre();
             med.nombre = DropDownListReceta.Text;
             medicina.Add(med);
@@ -244,15 +248,17 @@ namespace Consultorio_Medico
                     a.conteo++;
                 }
             }
-            string json = JsonConvert.SerializeObject(listenfermedades);
-            string archivo = Server.MapPath("Enfermedades.json");
-            File.WriteAllText(archivo, json);
-            Enfermedades enf = new Enfermedades();
-            enf.Nombre_Enfermedad = DropDownListEnfermedades.Text;
-            enfermedades.Add(enf);
+            Enfermedadnombre enfermedad = new Enfermedadnombre();
+            enfermedad.nombre = DropDownListEnfermedades.Text;
+            enfermedades.Add(enfermedad);
             listenfermedades.Clear();
             GridViewEnfermedades.DataSource = enfermedades;
             GridViewEnfermedades.DataBind();
+        }
+
+        protected void DropDownListSintomas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

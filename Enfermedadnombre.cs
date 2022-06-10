@@ -5,9 +5,8 @@ using System.Web;
 
 namespace Consultorio_Medico
 {
-    public class Sintomasnombre
+    public class Enfermedadnombre
     {
         public string nombre { get; set; }
     }
 }
-   

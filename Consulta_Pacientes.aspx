@@ -41,7 +41,7 @@
             </asp:DropDownList>
             <br />
 &nbsp;Sintomas&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:DropDownList ID="DropDownListSintomas" runat="server" BackColor="#CCFFFF">
+            <asp:DropDownList ID="DropDownListSintomas" runat="server" BackColor="#CCFFFF" OnSelectedIndexChanged="DropDownListSintomas_SelectedIndexChanged">
             </asp:DropDownList>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Button ID="Button1" runat="server" Text="Agregar" OnClick="Button1_Click" BackColor="#CCFFFF" />

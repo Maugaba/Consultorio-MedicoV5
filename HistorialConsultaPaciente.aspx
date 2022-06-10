@@ -43,8 +43,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:TextBox ID="TextBoxTemperatura" runat="server"></asp:TextBox>
         <br />
-        Enfermedades&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:ListBox ID="ListBoxEnfermedades" runat="server"></asp:ListBox>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <br />
 &nbsp;<asp:Label ID="Label8" runat="server" Text="Diagnostico"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -60,7 +59,8 @@
         <br />
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False">
             <Columns>
-                <asp:ImageField ControlStyle-Width="100" ControlStyle-Height = "100" HeaderText="Imagen" HeaderImageUrl="imagenes" >
+                <asp:ImageField DataImageUrlField="Nombreimagen" ControlStyle-Width="100" ControlStyle-Height = "100" HeaderText="Imagen" >
+<ControlStyle Height="100px" Width="100px"></ControlStyle>
                 </asp:ImageField>
             </Columns>
         </asp:GridView>
