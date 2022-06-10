@@ -25,19 +25,27 @@ namespace Consultorio_Medico
         protected void Button1_Click(object sender, EventArgs e)
         {
             Enfermedades enfermeda = new Enfermedades();
-            enfermeda.id = TextBoxidenfermedad.Text;
             enfermeda.Nombre_Enfermedad = TextBoxnombre.Text;
             enfermedades.Add(enfermeda);
             Guardar_Json();
-            TextBoxidenfermedad.Text = "";
             TextBoxnombre.Text = "";
-            Response.Write("<script>alert('¡Cita creada correctamente!')</script>");
+            Response.Write("<script>alert('¡Enfermedad añadida correctamente!')</script>");
         }
         void Guardar_Json()
         {
             string json = JsonConvert.SerializeObject(enfermedades);
-            string archivo = Server.MapPath("Agenda.json");
+            string archivo = Server.MapPath("Enfermedades.json");
             File.WriteAllText(archivo, json);
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("default",true);
+        }
+
+        protected void TextBoxnombre_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

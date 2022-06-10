@@ -41,7 +41,7 @@
             <asp:DropDownList ID="DropDownListSintomas" runat="server">
             </asp:DropDownList>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="Button1" runat="server" Text="Button" />
+            <asp:Button ID="Button1" runat="server" Text="Agregar" OnClick="Button1_Click" />
             <br />
             <asp:GridView ID="GridViewSintomas" runat="server">
             </asp:GridView>
@@ -59,12 +59,19 @@
             <asp:DropDownList ID="DropDownListReceta" runat="server">
             </asp:DropDownList>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="Button2" runat="server" Text="Button" />
+            <asp:Button ID="Button2" runat="server" Text="Agregar medicamento" OnClick="Button2_Click" />
             <br />
-            <asp:GridView ID="GridViewReceta" runat="server">
+            <asp:GridView ID="GridViewmedicina" runat="server">
             </asp:GridView>
             <br />
 &nbsp;<asp:Label ID="Label10" runat="server" Text="Imagenes"></asp:Label>
+            <br />
+            <asp:FileUpload ID="FileUploadImage" runat="server" />
+&nbsp;<asp:Button ID="Button5" runat="server" OnClick="Button5_Click" Text="Agregar imagen" Width="140px" />
+            <br />
+            <asp:GridView ID="GridViewImagen" runat="server">
+            </asp:GridView>
+            <br />
             <br />
 &nbsp;<asp:Label ID="Label11" runat="server" Text="Nueva Consulta (no seleccione Fecha si no habra)"></asp:Label>
             <asp:Calendar ID="CalendarNuevaConsulta" runat="server"></asp:Calendar>
@@ -72,6 +79,9 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Button ID="Button3" runat="server" Text="Agregar Consulta" OnClick="Button3_Click" />
 &nbsp;
+            <br />
+            <br />
+            <asp:Button ID="Button6" runat="server" OnClick="Button6_Click" Text="Regresar al inicio" />
             <br />
         </div>
     </form>

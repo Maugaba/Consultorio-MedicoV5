@@ -18,5 +18,10 @@ namespace Consultorio_Medico
         {
 
         }
+
+        protected void Button6_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Consulta_Pacientes",true);
+        }
     }
 }

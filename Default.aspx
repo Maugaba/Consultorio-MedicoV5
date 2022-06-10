@@ -10,7 +10,7 @@
             <asp:Button ID="Button1" runat="server" Height="100px" Text="Agenda" Width="200px" OnClick="Button1_Click" />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;<asp:Button ID="Button2" runat="server" Height="100px" Text="Pacientes" Width="200px" OnClick="Button2_Click" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Button ID="Button3" runat="server" Height="100px" Text="Historial Pacientes" Width="200px" OnClick="Button3_Click" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Button ID="Button3" runat="server" Height="100px" Text="Consulta de Pacientes" Width="200px" OnClick="Button3_Click" />
         </center>  
     <div>
         <center>

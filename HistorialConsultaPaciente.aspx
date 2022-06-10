@@ -59,6 +59,9 @@
         <asp:TextBox ID="TextBoxNuevaConsulta" runat="server"></asp:TextBox>
         <div>
         </div>
+        <p>
+            <asp:Button ID="Button6" runat="server" OnClick="Button6_Click" Text="Regresar a la consulta" />
+        </p>
     </form>
 </body>
 </html>

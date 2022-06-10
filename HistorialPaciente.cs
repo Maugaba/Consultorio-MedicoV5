@@ -12,9 +12,9 @@ namespace Consultorio_Medico
         public DateTime Fecha_Consulta { get; set; }
         public string Hora_Consulta { get; set; }
         public string Temperatura { get; set; }
-        public List<Sintomas> Sintoma { get; set; }
+        public List<Sintomasnombre> Sintoma { get; set; }
         public string Diagnostico { get; set; }
-        public List<Medicamentos> Receta { get; set; }
+        public List<Medicamentosnombre> Receta { get; set; }
         public DateTime Nueva_visita { get; set; }
         public string Precio_consulta { get; set; }
         public List<ImagenesConsulta> Imagenes { get; set; }

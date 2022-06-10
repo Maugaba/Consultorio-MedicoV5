@@ -8,21 +8,16 @@
     <title></title>
 </head>
 <body>
-    <p>
-        &nbsp;</p>
     <form id="form1" runat="server">
         <div>
-            <asp:Label ID="Label1" runat="server" Text="Id Enfermedad: "></asp:Label>
-            <asp:TextBox ID="TextBoxidenfermedad" runat="server" Width="135px"></asp:TextBox>
-            <br />
-            <br />
             <asp:Label ID="Label2" runat="server" Text="Nombre de la enfermedad: "></asp:Label>
-            <asp:TextBox ID="TextBoxnombre" runat="server" Width="135px"></asp:TextBox>
-            <br />
+            <asp:TextBox ID="TextBoxnombre" runat="server" Width="135px" OnTextChanged="TextBoxnombre_TextChanged"></asp:TextBox>
             <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Agregar Enfermedad" />
             <br />
+            <br />
+            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Regresar al inicio" />
             <br />
         </div>
     </form>

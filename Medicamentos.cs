@@ -8,6 +8,7 @@ namespace Consultorio_Medico
     public class Medicamentos
     {
         public string Codigo_Medicamento { get; set; }
+        public string nombre { get; set; }
         public string Ingrediente_Generico { get; set; }
         public string Laboratorio { get; set; }
         public List<Enfermedades> Enfermedades { get; set; }

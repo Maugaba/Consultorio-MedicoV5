@@ -31,7 +31,7 @@ namespace Consultorio_Medico
 
         protected void Button3_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Historial_Pacientes", true);
+            Response.Redirect("Consulta_Pacientes", true);
         }
 
         protected void Button4_Click(object sender, EventArgs e)
