@@ -58,6 +58,14 @@
         <br />
 &nbsp;<asp:Label ID="Label10" runat="server" Text="Imagenes"></asp:Label>
         <br />
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False">
+            <Columns>
+                <asp:ImageField HeaderImageUrl="Imagen" HeaderText="Imagen">
+                </asp:ImageField>
+            </Columns>
+        </asp:GridView>
+        <br />
+        <br />
 &nbsp;<asp:Label ID="Label11" runat="server" Text="Fecha Nueva Consulta "></asp:Label>
         <asp:TextBox ID="TextBoxNuevaConsulta" runat="server"></asp:TextBox>
         <div>
