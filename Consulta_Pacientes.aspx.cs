@@ -24,10 +24,7 @@ namespace Consultorio_Medico
         static List<DineroIngresado> dinero = new List<DineroIngresado>();
         protected void Page_Load(object sender, EventArgs e)
         {
-            DropDownListDPIdelPAciente.Items.Clear();
-            DropDownListEnfermedades.Items.Clear();
-            DropDownListReceta.Items.Clear();
-            DropDownListSintomas.Items.Clear();
+
             var identidad = (FormsIdentity)Context.User.Identity;
             if (identidad.Ticket.UserData != "2")
             {
@@ -45,7 +42,11 @@ namespace Consultorio_Medico
 
             foreach (var a in pacientes)
             {
-                DropDownListDPIdelPAciente.Items.Add(a.DPI);
+                if (!IsPostBack)
+                {
+                    DropDownListDPIdelPAciente.Items.Add(a.DPI);
+                }
+                
             }
 
             string archivo1 = Server.MapPath("Sintomas.json");
@@ -55,28 +56,33 @@ namespace Consultorio_Medico
 
             if (json1.Length > 0)
             {
-                listsintomas.Clear();
                 listsintomas = JsonConvert.DeserializeObject<List<Sintomas>>(json1);
             }
 
             foreach (var a in listsintomas)
             {
-                DropDownListSintomas.Items.Add(a.Nombre_Sintoma);
+                if (!IsPostBack)
+                {
+                    DropDownListSintomas.Items.Add(a.Nombre_Sintoma);
+                }
+                    
             }
-            string archivo2 = Server.MapPath("Medicamentos.json");
+            string archivo2 = Server.MapPath("Medicamento.json");
             StreamReader jsonStream2 = File.OpenText(archivo2);
             string json2 = jsonStream2.ReadToEnd();
             jsonStream2.Close();
 
             if (json2.Length > 0)
             {
-                listmedicamento.Clear();
                 listmedicamento = JsonConvert.DeserializeObject<List<Medicamentos>>(json2);
             }
 
             foreach (var a in listmedicamento)
             {
-                DropDownListReceta.Items.Add(a.nombre);
+                if (!IsPostBack)
+                {
+                    DropDownListReceta.Items.Add(a.nombre);
+                }
             }
             string archivo3 = Server.MapPath("Enfermedades.json");
             StreamReader jsonStream3 = File.OpenText(archivo3);
@@ -85,13 +91,16 @@ namespace Consultorio_Medico
 
             if (json3.Length > 0)
             {
-                listenfermedades.Clear();
                 listenfermedades = JsonConvert.DeserializeObject<List<Enfermedades>>(json3);
             }
 
             foreach (var a in listenfermedades)
             {
-                DropDownListEnfermedades.Items.Add(a.Nombre_Enfermedad);
+                if (!IsPostBack)
+                {
+                    DropDownListEnfermedades.Items.Add(a.Nombre_Enfermedad);
+                }
+                
             }
             string archivo4 = Server.MapPath("Dinero.json");
             StreamReader jsonStream4 = File.OpenText(archivo4);

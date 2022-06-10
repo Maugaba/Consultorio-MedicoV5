@@ -32,13 +32,12 @@
             <asp:TextBox ID="TextBoxEdadPromedio" runat="server" BackColor="#CCFFFF" Font-Size="Large"></asp:TextBox>
             <br />
             <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fecha&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dinero<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fecha&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dinero<br />
             &nbsp;<asp:Label ID="Label6" runat="server" Font-Size="Large" Text="Total de dinero:"></asp:Label>
             <asp:TextBox ID="TextBoxTotalDineroFecha1" runat="server" EnableTheming="True" OnTextChanged="TextBoxTotalDineroFecha1_TextChanged" TextMode="MultiLine" Width="230px" BackColor="#CCFFFF" Font-Size="Large"></asp:TextBox>
-            <asp:TextBox ID="TextBoxTotalDineroFecha2" runat="server" TextMode="MultiLine" Width="187px" BackColor="#CCFFFF" Font-Size="Large"></asp:TextBox>
             <br />
             <br />
-            <asp:Button ID="ButtonRegresarInicio" runat="server" BackColor="#CCFFFF" Font-Size="Large" Text="Regresar al inicio" />
+            <asp:Button ID="ButtonRegresarInicio" runat="server" BackColor="#CCFFFF" Font-Size="Large" Text="Regresar al inicio" OnClick="ButtonRegresarInicio_Click" />
         </div>
     </form>
 </body>

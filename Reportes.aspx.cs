@@ -28,7 +28,7 @@ namespace Consultorio_Medico
                 enfermedades = JsonConvert.DeserializeObject<List<Enfermedades>>(json);
             }
 
-            string archivo1 = Server.MapPath("Medicamentos.json");
+            string archivo1 = Server.MapPath("Medicamento.json");
             StreamReader jsonStream1 = File.OpenText(archivo1);
             string json1 = jsonStream1.ReadToEnd();
             jsonStream1.Close();
@@ -95,8 +95,7 @@ namespace Consultorio_Medico
 
             foreach(var a in dineroIngresado)
             {
-                TextBoxTotalDineroFecha1.Text = TextBoxTotalDineroFecha1.Text + a.fecha.ToString() + "\n";
-                TextBoxTotalDineroFecha2.Text = TextBoxTotalDineroFecha2.Text + a.dinero.ToString() + "\n";
+                TextBoxTotalDineroFecha1.Text = TextBoxTotalDineroFecha1.Text + "  "+a.fecha.Day.ToString() +"/" + a.fecha.Month.ToString() +"/"+ a.fecha.Year.ToString() + "    " + a.dinero.ToString() + ".00\n";
             }
 
 
@@ -105,6 +104,11 @@ namespace Consultorio_Medico
         protected void TextBoxTotalDineroFecha1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        protected void ButtonRegresarInicio_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("default",true);
         }
     }
 }

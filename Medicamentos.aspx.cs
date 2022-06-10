@@ -52,7 +52,7 @@ namespace Consultorio_Medico
         void Guardar_Json()
         {
             string json = JsonConvert.SerializeObject(MedicamentosList);
-            string archivo = Server.MapPath("Medicamentos.json");
+            string archivo = Server.MapPath("Medicamento.json");
             File.WriteAllText(archivo, json);
         }
 
