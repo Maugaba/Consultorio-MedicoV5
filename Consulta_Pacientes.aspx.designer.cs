@@ -150,6 +150,33 @@ namespace Consultorio_Medico
         protected global::System.Web.UI.WebControls.TextBox TextBoxTemperatura;
 
         /// <summary>
+        /// Control DropDownListEnfermedades.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownListEnfermedades;
+
+        /// <summary>
+        /// Control Button7.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button7;
+
+        /// <summary>
+        /// Control GridViewEnfermedades.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridViewEnfermedades;
+
+        /// <summary>
         /// Control Label8.
         /// </summary>
         /// <remarks>

@@ -218,6 +218,7 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DineroIngresado.cs" />
     <Compile Include="Enfermedades.aspx.cs">
       <DependentUpon>Enfermedades.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

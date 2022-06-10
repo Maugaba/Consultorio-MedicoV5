@@ -10,6 +10,7 @@ namespace Consultorio_Medico
         public string Codigo_Sintoma { get; set; }
         public string Nombre_Sintoma { get; set; }
         public string Descripcion_Sintoma { get; set; }
+        public int conteo { get; set; }
 
     }
 }

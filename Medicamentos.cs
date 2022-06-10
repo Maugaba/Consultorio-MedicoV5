@@ -14,6 +14,7 @@ namespace Consultorio_Medico
         public List<Enfermedades> Enfermedades { get; set; }
         public string Dosis { get; set; }
         public string Horas_de_administracion { get; set; }
+        public int conteo { get; set; }
 
     }
 }

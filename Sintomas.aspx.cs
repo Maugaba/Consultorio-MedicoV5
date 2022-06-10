@@ -13,7 +13,6 @@ namespace Consultorio_Medico
     public partial class Sintomas1 : System.Web.UI.Page
     {
         static List<Sintomas> listsintomas = new List<Sintomas>();
-        static List<Sintomasnombre> listsintomasnombre = new List<Sintomasnombre>();
         protected void Page_Load(object sender, EventArgs e)
         {
             var identidad = (FormsIdentity)Context.User.Identity;
@@ -28,21 +27,15 @@ namespace Consultorio_Medico
             string json = JsonConvert.SerializeObject(listsintomas);
             string archivo = Server.MapPath("Sintomas.json");
             File.WriteAllText(archivo, json);
-            string json1 = JsonConvert.SerializeObject(listsintomasnombre);
-            string archivo1 = Server.MapPath("Sintomasnombre.json");
-            File.WriteAllText(archivo1, json1);
         }
 
         protected void Button1_Click1(object sender, EventArgs e)
         {
             Sintomas sintomas = new Sintomas();
-            Sintomasnombre sintomasnombre = new Sintomasnombre();
             sintomas.Codigo_Sintoma = TextBoxCodigoSintoma.Text;
             sintomas.Nombre_Sintoma = TextBoxNombreSintoma.Text;
-            sintomasnombre.nombre = TextBoxNombreSintoma.Text;
             sintomas.Descripcion_Sintoma = TextBoxDescripcionSintoma.Text;
             listsintomas.Add(sintomas);
-            listsintomasnombre.Add(sintomasnombre);
             Guardar_Json();
             TextBoxCodigoSintoma.Text = " ";
             TextBoxNombreSintoma.Text = " ";

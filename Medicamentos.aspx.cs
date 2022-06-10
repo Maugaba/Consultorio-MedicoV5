@@ -15,7 +15,6 @@ namespace Consultorio_Medico
         static List<Enfermedades> Listenfermedades = new List<Enfermedades>();
         static List<Enfermedades> enfermedades = new List<Enfermedades>();
         static List<Medicamentos> MedicamentosList = new List<Medicamentos>();
-        static List<Medicamentosnombre> Medicamentosnombre = new List<Medicamentosnombre>();
         protected void Page_Load(object sender, EventArgs e)
         {
             var identidad = (FormsIdentity)Context.User.Identity;
@@ -54,25 +53,19 @@ namespace Consultorio_Medico
             string json = JsonConvert.SerializeObject(MedicamentosList);
             string archivo = Server.MapPath("Medicamentos.json");
             File.WriteAllText(archivo, json);
-            string json1 = JsonConvert.SerializeObject(Medicamentosnombre);
-            string archivo1 = Server.MapPath("Medicamentosnombre.json");
-            File.WriteAllText(archivo1, json1);
         }
 
         protected void Button2_Click(object sender, EventArgs e)
         {
             Medicamentos medicina = new Medicamentos();
-            Medicamentosnombre med = new Medicamentosnombre();
             medicina.Codigo_Medicamento = TextBoxcodigo.Text;
             medicina.nombre = TextBoxnombre.Text;
-            med.nombre = TextBoxnombre.Text;
             medicina.Dosis = TextBoxdosis.Text;
             medicina.Ingrediente_Generico = TextBoxIngrediente.Text;
             medicina.Enfermedades = Listenfermedades.ToArray().ToList();
             medicina.Horas_de_administracion = TextBoxhora.Text;
             medicina.Laboratorio = TextBoxlab.Text;
             MedicamentosList.Add(medicina);
-            Medicamentosnombre.Add(med);
             Guardar_Json();
             Listenfermedades.Clear();
             TextBoxcodigo.Text = "";

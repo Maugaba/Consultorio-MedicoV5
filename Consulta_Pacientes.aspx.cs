@@ -13,12 +13,15 @@ namespace Consultorio_Medico
     public partial class Historial_Pacientes : System.Web.UI.Page
     {
         static List<Pacientes> pacientes = new List<Pacientes>();
-        static List<Sintomasnombre> listsintomas = new List<Sintomasnombre>();
+        static List<Sintomas> listsintomas = new List<Sintomas>();
         static List<Sintomasnombre> sintomas = new List<Sintomasnombre>();
         static List<HistorialPaciente> consulta = new List<HistorialPaciente>();
-        static List<Medicamentosnombre> listmedicamento = new List<Medicamentosnombre>();
+        static List<Medicamentos> listmedicamento = new List<Medicamentos>();
         static List<Medicamentosnombre> medicina = new List<Medicamentosnombre>();
         static List<ImagenesConsulta> imagenes = new List<ImagenesConsulta>();
+        static List<Enfermedades> enfermedades = new List<Enfermedades>();
+        static List<Enfermedades> listenfermedades = new List<Enfermedades>();
+        static List<DineroIngresado> dinero = new List<DineroIngresado>();
         protected void Page_Load(object sender, EventArgs e)
         {
             var identidad = (FormsIdentity)Context.User.Identity;
@@ -41,33 +44,56 @@ namespace Consultorio_Medico
                 DropDownListDPIdelPAciente.Items.Add(a.DPI);
             }
 
-            string archivo1 = Server.MapPath("Sintomasnombre.json");
+            string archivo1 = Server.MapPath("Sintomas.json");
             StreamReader jsonStream1 = File.OpenText(archivo1);
             string json1 = jsonStream1.ReadToEnd();
             jsonStream1.Close();
 
             if (json1.Length > 0)
             {
-                listsintomas = JsonConvert.DeserializeObject<List<Sintomasnombre>>(json1);
+                listsintomas = JsonConvert.DeserializeObject<List<Sintomas>>(json1);
             }
 
             foreach (var a in listsintomas)
             {
-                DropDownListSintomas.Items.Add(a.nombre);
+                DropDownListSintomas.Items.Add(a.Nombre_Sintoma);
             }
-            string archivo2 = Server.MapPath("Medicamentosnombre.json");
+            string archivo2 = Server.MapPath("Medicamentos.json");
             StreamReader jsonStream2 = File.OpenText(archivo2);
             string json2 = jsonStream2.ReadToEnd();
             jsonStream2.Close();
 
             if (json2.Length > 0)
             {
-                listmedicamento = JsonConvert.DeserializeObject<List<Medicamentosnombre>>(json2);
+                listmedicamento = JsonConvert.DeserializeObject<List<Medicamentos>>(json2);
             }
 
             foreach (var a in listmedicamento)
             {
                 DropDownListReceta.Items.Add(a.nombre);
+            }
+            string archivo3 = Server.MapPath("Enfermedades.json");
+            StreamReader jsonStream3 = File.OpenText(archivo3);
+            string json3 = jsonStream3.ReadToEnd();
+            jsonStream3.Close();
+
+            if (json3.Length > 0)
+            {
+                listenfermedades = JsonConvert.DeserializeObject<List<Enfermedades>>(json3);
+            }
+
+            foreach (var a in listenfermedades)
+            {
+                DropDownListReceta.Items.Add(a.Nombre_Enfermedad);
+            }
+            string archivo4 = Server.MapPath("Dinero.json");
+            StreamReader jsonStream4 = File.OpenText(archivo4);
+            string json4 = jsonStream4.ReadToEnd();
+            jsonStream4.Close();
+
+            if (json4.Length > 0)
+            {
+                dinero = JsonConvert.DeserializeObject<List<DineroIngresado>>(json4);
             }
         }
 
@@ -78,6 +104,11 @@ namespace Consultorio_Medico
 
         protected void Button3_Click(object sender, EventArgs e)
         {
+            DineroIngresado cash = new DineroIngresado();
+            cash.dinero = DropDownListPrecio.Text;
+            cash.fecha = DateTime.Now;
+            dinero.Add(cash);
+            Guardar_Dinero();
             HistorialPaciente paciente = new HistorialPaciente();
             paciente.Dpi_del_paciente = DropDownListDPIdelPAciente.Text;
             paciente.Fecha_Consulta = DateTime.Now;
@@ -103,6 +134,13 @@ namespace Consultorio_Medico
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            foreach(var a in listsintomas)
+            {
+                if(a.Nombre_Sintoma == DropDownListSintomas.Text)
+                {
+                    a.conteo++;
+                }
+            }
             Sintomasnombre sinto = new Sintomasnombre();
             sinto.nombre = DropDownListSintomas.Text;
             sintomas.Add(sinto);
@@ -118,8 +156,22 @@ namespace Consultorio_Medico
             File.WriteAllText(archivo, json);
         }
 
+        void Guardar_Dinero()
+        {
+            string json = JsonConvert.SerializeObject(dinero);
+            string archivo = Server.MapPath("Dinero.json");
+            File.WriteAllText(archivo, json);
+        }
+
         protected void Button2_Click(object sender, EventArgs e)
         {
+            foreach (var a in listmedicamento)
+            {
+                if (a.nombre == DropDownListSintomas.Text)
+                {
+                    a.conteo++;
+                }
+            }
             Medicamentosnombre med = new Medicamentosnombre();
             med.nombre = DropDownListReceta.Text;
             medicina.Add(med);
@@ -160,6 +212,23 @@ namespace Consultorio_Medico
         protected void Button6_Click(object sender, EventArgs e)
         {
             Response.Redirect("default", true);
+        }
+
+        protected void Button7_Click(object sender, EventArgs e)
+        {
+            foreach (var a in listenfermedades)
+            {
+                if (a.Nombre_Enfermedad == DropDownListEnfermedades.Text)
+                {
+                    a.conteo++;
+                }
+            }
+            Enfermedades enf = new Enfermedades();
+            enf.Nombre_Enfermedad = DropDownListEnfermedades.Text;
+            enfermedades.Add(enf);
+            listenfermedades.Clear();
+            GridViewEnfermedades.DataSource = enfermedades;
+            GridViewEnfermedades.DataBind();
         }
     }
 }

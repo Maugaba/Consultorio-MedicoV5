@@ -50,6 +50,16 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="TextBoxTemperatura" runat="server"></asp:TextBox>
             <br />
+            <br />
+&nbsp;Enfermedades&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:DropDownList ID="DropDownListEnfermedades" runat="server">
+            </asp:DropDownList>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="Button7" runat="server" OnClick="Button7_Click" Text="Agregar" />
+            <br />
+            <asp:GridView ID="GridViewEnfermedades" runat="server">
+            </asp:GridView>
+            <br />
 &nbsp;<asp:Label ID="Label8" runat="server" Text="Diagnostico"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="TextBoxDiagnostico" runat="server" Height="44px" Width="313px" TextMode="MultiLine"></asp:TextBox>

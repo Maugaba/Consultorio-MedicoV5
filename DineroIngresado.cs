@@ -5,9 +5,9 @@ using System.Web;
 
 namespace Consultorio_Medico
 {
-    public class Enfermedades
+    public class DineroIngresado
     {
-        public string Nombre_Enfermedad { get; set; }
-        public int conteo { get; set; }
+        public string dinero { get; set; }
+        public DateTime fecha { get; set; }
     }
 }

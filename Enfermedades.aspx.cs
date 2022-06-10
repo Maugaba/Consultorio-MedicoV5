@@ -26,6 +26,7 @@ namespace Consultorio_Medico
         {
             Enfermedades enfermeda = new Enfermedades();
             enfermeda.Nombre_Enfermedad = TextBoxnombre.Text;
+            enfermeda.conteo = 0;
             enfermedades.Add(enfermeda);
             Guardar_Json();
             TextBoxnombre.Text = "";
