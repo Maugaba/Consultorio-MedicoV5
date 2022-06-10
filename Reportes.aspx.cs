@@ -68,9 +68,9 @@ namespace Consultorio_Medico
                 sintomas = JsonConvert.DeserializeObject<List<Sintomas>>(json4);
             }
 
-            enfermedades = enfermedades.OrderBy(x => x.conteo).ToList();
-            medicamentos = medicamentos.OrderBy(x => x.conteo).ToList();
-            sintomas = sintomas.OrderBy(x => x.conteo).ToList();
+            enfermedades = enfermedades.OrderByDescending(x => x.conteo).ToList();
+            medicamentos = medicamentos.OrderByDescending(x => x.conteo).ToList();
+            sintomas = sintomas.OrderByDescending(x => x.conteo).ToList();
 
             GridViewEnfermedades.DataSource = enfermedades;
             GridViewEnfermedades.DataBind();

@@ -176,7 +176,7 @@ namespace Consultorio_Medico
         {
             foreach (var a in listmedicamento)
             {
-                if (a.nombre == DropDownListSintomas.Text)
+                if (a.nombre == DropDownListReceta.Text)
                 {
                     a.conteo++;
                 }

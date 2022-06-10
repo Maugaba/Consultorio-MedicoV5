@@ -43,6 +43,9 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:TextBox ID="TextBoxTemperatura" runat="server"></asp:TextBox>
         <br />
+        Enfermedades&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:ListBox ID="ListBox1" runat="server"></asp:ListBox>
+        <br />
 &nbsp;<asp:Label ID="Label8" runat="server" Text="Diagnostico"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:TextBox ID="TextBoxDiagnostico" runat="server" Height="44px" Width="313px"></asp:TextBox>
@@ -59,6 +62,10 @@
         <asp:TextBox ID="TextBoxNuevaConsulta" runat="server"></asp:TextBox>
         <div>
         </div>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
         <p>
             <asp:Button ID="Button6" runat="server" OnClick="Button6_Click" Text="Regresar a la consulta" />
         </p>
