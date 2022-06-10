@@ -11,15 +11,17 @@
     <form id="form1" runat="server">
         <asp:Label ID="Label1" runat="server" Text="DPI del Paciente"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:DropDownList ID="DropDownListDPIPaciente" runat="server">
+        <asp:DropDownList ID="DropDownListDPIPaciente" runat="server" style="height: 22px">
         </asp:DropDownList>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="Button7" runat="server" Text="Button" Width="76px" />
         <br />
         <asp:Label ID="Label4" runat="server" Text="Numero de Consulta"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:DropDownList ID="DropDownListNumerodeConsulta" runat="server">
         </asp:DropDownList>
 &nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Button ID="Button4" runat="server" Text="Visualizar" />
+        <asp:Button ID="Button4" runat="server" Text="Visualizar" OnClick="Button4_Click" />
         <br />
 &nbsp;<asp:Label ID="Label2" runat="server" Text="Fecha Consulta"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -60,7 +62,7 @@
         <br />
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False">
             <Columns>
-                <asp:ImageField HeaderImageUrl="Imagen" HeaderText="Imagen">
+                <asp:ImageField ControlStyle-Width="100" ControlStyle-Height = "100" HeaderText="Imagen" HeaderImageUrl="imagenes" >
                 </asp:ImageField>
             </Columns>
         </asp:GridView>
