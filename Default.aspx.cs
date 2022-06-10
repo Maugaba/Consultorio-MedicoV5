@@ -48,5 +48,10 @@ namespace Consultorio_Medico
         {
             Response.Redirect("Enfermedades", true);
         }
+
+        protected void Button7_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Reportes", true);
+        }
     }
 }

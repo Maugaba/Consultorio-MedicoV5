@@ -73,6 +73,7 @@ namespace Consultorio_Medico
             TextBoxhora.Text = "";
             TextBoxlab.Text = "";
             TextBoxIngrediente.Text = "";
+            TextBoxnombre.Text = "";
             Response.Write("<script>alert('¡Medicamento añadido correctamente!')</script>");
         }
 

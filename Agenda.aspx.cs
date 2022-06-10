@@ -34,6 +34,7 @@ namespace Consultorio_Medico
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            pacientes.Clear();
             Agenda agenda = new Agenda();
             agenda.DPI_del_paciente = DropDownListDPIPaciente.Text;
             agenda.Fecha = CalendarFecha.SelectedDate;

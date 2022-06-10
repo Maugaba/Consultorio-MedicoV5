@@ -106,12 +106,12 @@ namespace Consultorio_Medico
         {
             DineroIngresado cash = new DineroIngresado();
             cash.dinero = DropDownListPrecio.Text;
-            cash.fecha = DateTime.Now;
+            cash.fecha = DateTime.Today;
             dinero.Add(cash);
             Guardar_Dinero();
             HistorialPaciente paciente = new HistorialPaciente();
             paciente.Dpi_del_paciente = DropDownListDPIdelPAciente.Text;
-            paciente.Fecha_Consulta = DateTime.Now;
+            paciente.Fecha_Consulta = DateTime.Today;
             paciente.Hora_Consulta = TextBoxHora.Text;
             paciente.ID_consulta = TextBoxIdconsulta.Text;
             paciente.Precio_consulta = DropDownListPrecio.Text;

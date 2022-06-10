@@ -24,22 +24,13 @@ namespace Consultorio_Medico
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Control ListBoxEnfermedadesComunes.
+        /// Control GridViewEnfermedades.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox ListBoxEnfermedadesComunes;
-
-        /// <summary>
-        /// Control TextBoxEdadPromedio.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxEdadPromedio;
+        protected global::System.Web.UI.WebControls.GridView GridViewEnfermedades;
 
         /// <summary>
         /// Control GridViewMedicamentosRecetados.
@@ -49,6 +40,24 @@ namespace Consultorio_Medico
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GridViewMedicamentosRecetados;
+
+        /// <summary>
+        /// Control GridViewSintomas.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridViewSintomas;
+
+        /// <summary>
+        /// Control TextBoxEdadPromedio.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBoxEdadPromedio;
 
         /// <summary>
         /// Control TextBoxTotalDineroFecha1.

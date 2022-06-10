@@ -10,21 +10,27 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            Enfermedades mas comunes:
+            Enfermedades de las mas comunes a menos comunes:
             <br />
-            <asp:ListBox ID="ListBoxEnfermedadesComunes" runat="server" Height="256px" Width="243px"></asp:ListBox>
+            <br />
+            <asp:GridView ID="GridViewEnfermedades" runat="server">
+            </asp:GridView>
+            <br />
+            Medicamentos de los mas recetados a los menos recetados:<asp:GridView ID="GridViewMedicamentosRecetados" runat="server" Height="170px" Width="203px">
+            </asp:GridView>
+            <br />
+            Sintomas de los mas comunes a los menos comunes:<asp:GridView ID="GridViewSintomas" runat="server" Height="170px" Width="203px">
+            </asp:GridView>
             <br />
             <br />
             Edad promedio:
             <asp:TextBox ID="TextBoxEdadPromedio" runat="server"></asp:TextBox>
             <br />
             <br />
-            Listado de medicamentos recetados:<asp:GridView ID="GridViewMedicamentosRecetados" runat="server" Height="220px" Width="286px">
-            </asp:GridView>
-            <br />
-            Total de dinero entre 2 fechas:
-            <asp:TextBox ID="TextBoxTotalDineroFecha1" runat="server"></asp:TextBox>
-            <asp:TextBox ID="TextBoxTotalDineroFecha2" runat="server"></asp:TextBox>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fecha&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dinero<br />
+            Total de dinero:
+            <asp:TextBox ID="TextBoxTotalDineroFecha1" runat="server" EnableTheming="True" OnTextChanged="TextBoxTotalDineroFecha1_TextChanged" TextMode="MultiLine" Width="230px"></asp:TextBox>
+            <asp:TextBox ID="TextBoxTotalDineroFecha2" runat="server" TextMode="MultiLine" Width="187px"></asp:TextBox>
         </div>
     </form>
 </body>
