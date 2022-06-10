@@ -42,13 +42,13 @@ namespace Consultorio_Medico
         protected global::System.Web.UI.WebControls.DropDownList DropDownListDPIPaciente;
 
         /// <summary>
-        /// Control Button7.
+        /// Control Button4.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button7;
+        protected global::System.Web.UI.WebControls.Button Button4;
 
         /// <summary>
         /// Control Label4.
@@ -60,22 +60,13 @@ namespace Consultorio_Medico
         protected global::System.Web.UI.WebControls.Label Label4;
 
         /// <summary>
-        /// Control DropDownListNumerodeConsulta.
+        /// Control TextBoxConsulta.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownListNumerodeConsulta;
-
-        /// <summary>
-        /// Control Button4.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button4;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxConsulta;
 
         /// <summary>
         /// Control Label2.
@@ -159,13 +150,13 @@ namespace Consultorio_Medico
         protected global::System.Web.UI.WebControls.TextBox TextBoxTemperatura;
 
         /// <summary>
-        /// Control ListBox1.
+        /// Control ListBoxEnfermedades.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox ListBox1;
+        protected global::System.Web.UI.WebControls.ListBox ListBoxEnfermedades;
 
         /// <summary>
         /// Control Label8.

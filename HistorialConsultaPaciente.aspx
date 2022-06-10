@@ -13,15 +13,13 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:DropDownList ID="DropDownListDPIPaciente" runat="server" style="height: 22px">
         </asp:DropDownList>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Button ID="Button7" runat="server" Text="Button" Width="76px" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="Button4" runat="server" Text="Visualizar" OnClick="Button4_Click" />
         <br />
         <asp:Label ID="Label4" runat="server" Text="Numero de Consulta"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:DropDownList ID="DropDownListNumerodeConsulta" runat="server">
-        </asp:DropDownList>
-&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Button ID="Button4" runat="server" Text="Visualizar" OnClick="Button4_Click" />
+        &nbsp;<asp:TextBox ID="TextBoxConsulta" runat="server"></asp:TextBox>
+        &nbsp;&nbsp;&nbsp;
         <br />
 &nbsp;<asp:Label ID="Label2" runat="server" Text="Fecha Consulta"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -46,11 +44,11 @@
         <asp:TextBox ID="TextBoxTemperatura" runat="server"></asp:TextBox>
         <br />
         Enfermedades&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:ListBox ID="ListBox1" runat="server"></asp:ListBox>
+        <asp:ListBox ID="ListBoxEnfermedades" runat="server"></asp:ListBox>
         <br />
 &nbsp;<asp:Label ID="Label8" runat="server" Text="Diagnostico"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="TextBoxDiagnostico" runat="server" Height="44px" Width="313px"></asp:TextBox>
+        <asp:TextBox ID="TextBoxDiagnostico" runat="server" Height="44px" Width="313px" TextMode="MultiLine"></asp:TextBox>
         <br />
 &nbsp;<asp:Label ID="Label9" runat="server" Text="Receta"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
