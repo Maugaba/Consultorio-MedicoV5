@@ -18,5 +18,6 @@ namespace Consultorio_Medico
         public DateTime Nueva_visita { get; set; }
         public string Precio_consulta { get; set; }
         public List<ImagenesConsulta> Imagenes { get; set; }
+        public List<Enfermedadnombre> enfermedades { get; set; }
     }
 }

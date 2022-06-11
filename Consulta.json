@@ -2,26 +2,31 @@
   
   {
     "ID_consulta": "1",
-    "Dpi_del_paciente": "1234",
+    "Dpi_del_paciente": "979791",
+    "Fecha_Consulta": "2022-06-10T00:00:00-06:00",
+    "Hora_Consulta": "11",
+    "Temperatura": "39",
+    "Sintoma": [ { "nombre": "Dolor de garganta" } ],
+    "Diagnostico": "Defensas extremadamente bajas",
+    "Receta": [
+      { "nombre": "ibuprofeno" },
+      { "nombre": "Acetaminofen" }
+    ],
+    "Nueva_visita": "2022-07-02T00:00:00",
+    "Precio_consulta": "Q500",
+    "Imagenes": [ { "Nombreimagen": "~/imagenes/2.jpg" } ]
+  },
+  {
+    "ID_consulta": "1",
+    "Dpi_del_paciente": "2123",
     "Fecha_Consulta": "2022-06-10T00:00:00-06:00",
     "Hora_Consulta": "7",
     "Temperatura": "35",
-    "Sintoma": [
-      {
-        "nombre": "Dolor de cabeza",
-      },
-      {
-        "nombre": " Dolor de estomago",
-      }
-    ],
-    "Diagnostico": "ttgfdr",
-    "Receta": [
-      {
-        "nombre": "Varisepix",
-      }
-    ],
+    "Sintoma": [ { "nombre": " Perdida del apetito" } ],
+    "Diagnostico": "Esta mal",
+    "Receta": [ { "nombre": "Curamejor" } ],
     "Nueva_visita": "0001-01-01T00:00:00",
-    "Precio_consulta": "Q200",
-    "Imagenes": [ { "Nombreimagen": "~/imagenes/diseño.png" } ]
+    "Precio_consulta": "Q350",
+    "Imagenes": [ { "Nombreimagen": "~/imagenes/2.jpg" } ]
   }
 ]

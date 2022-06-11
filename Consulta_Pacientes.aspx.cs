@@ -147,6 +147,7 @@ namespace Consultorio_Medico
             paciente.Receta = medicina.ToArray().ToList();
             paciente.Imagenes = imagenes.ToArray().ToList();
             paciente.Nueva_visita = CalendarNuevaConsulta.SelectedDate;
+            paciente.enfermedades = enfermedades.ToArray().ToList();
             consulta.Add(paciente);
             Guardar_Json();
             medicina.Clear();
@@ -167,6 +168,9 @@ namespace Consultorio_Medico
                     a.conteo++;
                 }
             }
+            string json = JsonConvert.SerializeObject(listsintomas);
+            string archivo = Server.MapPath("Sintomas.json");
+            File.WriteAllText(archivo, json);
             Sintomasnombre sinto = new Sintomasnombre();
             sinto.nombre = DropDownListSintomas.Text;
             sintomas.Add(sinto);
@@ -197,6 +201,9 @@ namespace Consultorio_Medico
                     a.conteo++;
                 }
             }
+            string json = JsonConvert.SerializeObject(listmedicamento);
+            string archivo = Server.MapPath("Medicamento.json");
+            File.WriteAllText(archivo, json);
             Medicamentosnombre med = new Medicamentosnombre();
             med.nombre = DropDownListReceta.Text;
             medicina.Add(med);
@@ -248,6 +255,9 @@ namespace Consultorio_Medico
                     a.conteo++;
                 }
             }
+            string json = JsonConvert.SerializeObject(listenfermedades);
+            string archivo = Server.MapPath("Enfermedades.json");
+            File.WriteAllText(archivo, json);
             Enfermedadnombre enfermedad = new Enfermedadnombre();
             enfermedad.nombre = DropDownListEnfermedades.Text;
             enfermedades.Add(enfermedad);

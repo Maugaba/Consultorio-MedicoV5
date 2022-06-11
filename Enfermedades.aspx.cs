@@ -18,7 +18,16 @@ namespace Consultorio_Medico
             var identidad = (FormsIdentity)Context.User.Identity;
             if (identidad.Ticket.UserData != "2")
             {
-                Response.Redirect("Contact", true);
+                Response.Redirect("default", true);
+            }
+            string archivo = Server.MapPath("Enfermedades.json");
+            StreamReader jsonStream = File.OpenText(archivo);
+            string json = jsonStream.ReadToEnd();
+            jsonStream.Close();
+
+            if (json.Length > 0)
+            {
+                enfermedades = JsonConvert.DeserializeObject<List<Enfermedades>>(json);
             }
         }
 

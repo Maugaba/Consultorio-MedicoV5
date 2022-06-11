@@ -15,7 +15,15 @@ namespace Consultorio_Medico
         static List<Sintomas> listsintomas = new List<Sintomas>();
         protected void Page_Load(object sender, EventArgs e)
         {
+            string archivo = Server.MapPath("Sintomas.json");
+            StreamReader jsonStream = File.OpenText(archivo);
+            string json = jsonStream.ReadToEnd();
+            jsonStream.Close();
 
+            if (json.Length > 0)
+            {
+                listsintomas = JsonConvert.DeserializeObject<List<Sintomas>>(json);
+            }
         }
 
         void Guardar_Json()

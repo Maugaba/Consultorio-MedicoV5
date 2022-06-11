@@ -14,7 +14,15 @@ namespace Consultorio_Medico
         static List<Pacientes> pacientes = new List<Pacientes>();
         protected void Page_Load(object sender, EventArgs e)
         {
+            string archivo = Server.MapPath("Pacientes.json");
+            StreamReader jsonStream = File.OpenText(archivo);
+            string json = jsonStream.ReadToEnd();
+            jsonStream.Close();
 
+            if (json.Length > 0)
+            {
+                pacientes = JsonConvert.DeserializeObject<List<Pacientes>>(json);
+            }
         }
 
         protected void Button1_Click(object sender, EventArgs e)

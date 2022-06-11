@@ -1,12 +1,1 @@
-[
-  {
-    "User": "Enfermera",
-    "contraseña": "$2a$11$ds4W4bGaok06xB00hq9DO.WkrCCAf4dNcmLoKi3dTKFKAFvPxduSC",
-    "Nivel": "1"
-  },
-  {
-    "User": "Doctor",
-    "contraseña": "$2a$11$pDvJan21KW3vN8.Pqw7NsekPag/wK5R2u/amfGDKP3qXXbXV.ibuu",
-    "Nivel": "2"
-  }
-]
+[{"User":"Doctor","contraseña":"$2a$11$i3m5GJRsOCtQTdaF3iU4ye3pXn1SBGETnc7xOiu67k1evk7LFugMW","Nivel":"2"},{"User":"Secretaria","contraseña":"$2a$11$dwdN7B8/NNaspb72cKxdCOWhQT7TYK0ZJJcr3fzSz8ti7eiO1L5Cu","Nivel":"1"}]

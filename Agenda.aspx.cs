@@ -25,6 +25,15 @@ namespace Consultorio_Medico
             {
                 pacientes = JsonConvert.DeserializeObject<List<Pacientes>>(json);
             }
+            string archivo1 = Server.MapPath("Agenda.json");
+            StreamReader jsonStream1 = File.OpenText(archivo1);
+            string json1 = jsonStream1.ReadToEnd();
+            jsonStream1.Close();
+
+            if (json1.Length > 0)
+            {
+                agendas = JsonConvert.DeserializeObject<List<Agenda>>(json1);
+            }
 
             foreach (var a in pacientes)
             {

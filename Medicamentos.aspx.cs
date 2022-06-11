@@ -17,7 +17,6 @@ namespace Consultorio_Medico
         static List<Medicamentos> MedicamentosList = new List<Medicamentos>();
         protected void Page_Load(object sender, EventArgs e)
         {
-            DropDownListenfermedades.Items.Clear();
             string archivo = Server.MapPath("Enfermedades.json");
             StreamReader jsonStream = File.OpenText(archivo);
             string json = jsonStream.ReadToEnd();
@@ -36,6 +35,16 @@ namespace Consultorio_Medico
                 }
                 
             }
+
+            string archivo1 = Server.MapPath("Medicamento.json");
+            StreamReader jsonStream1 = File.OpenText(archivo1);
+            string json1 = jsonStream1.ReadToEnd();
+            jsonStream1.Close();
+
+            if (json1.Length > 0)
+            {
+                MedicamentosList = JsonConvert.DeserializeObject<List<Medicamentos>>(json1);
+            }
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -45,7 +54,6 @@ namespace Consultorio_Medico
             Listenfermedades.Add(enfermedad);
             GridViewenfermedades.DataSource = Listenfermedades;
             GridViewenfermedades.DataBind();
-            enfermedades.Clear();
         }
 
         void Guardar_Json()
