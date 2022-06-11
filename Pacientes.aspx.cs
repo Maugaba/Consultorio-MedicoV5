@@ -47,5 +47,9 @@ namespace Consultorio_Medico
         {
             Response.Redirect("default", true);
         }
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Pacientes Editar", true);
+        }
     }
 }

@@ -1,11 +1,11 @@
 [
   {
-    "User": "111",
+    "User": "Enfermera",
     "contraseña": "$2a$11$ds4W4bGaok06xB00hq9DO.WkrCCAf4dNcmLoKi3dTKFKAFvPxduSC",
     "Nivel": "1"
   },
   {
-    "User": "222",
+    "User": "Doctor",
     "contraseña": "$2a$11$pDvJan21KW3vN8.Pqw7NsekPag/wK5R2u/amfGDKP3qXXbXV.ibuu",
     "Nivel": "2"
   }

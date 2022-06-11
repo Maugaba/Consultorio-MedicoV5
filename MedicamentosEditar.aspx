@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Medicamentos.aspx.cs" Inherits="Consultorio_Medico.Medicamentos1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="MedicamentosEditar.aspx.cs" Inherits="Consultorio_Medico.MedicamentosEditar" %>
 
 <!DOCTYPE html>
 
@@ -7,6 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
     <style type="text/css">
+
         .auto-style1 {
             font-size: large;
         }
@@ -14,12 +15,16 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        <div>
         <h1 style="background-color: #4DE6A8">
-            &nbsp;&nbsp;&nbsp;&nbsp; Medicamentos&nbsp;</h1>
+            &nbsp;&nbsp; Medicamentos&nbsp;</h1>
         <p>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="auto-style1">&nbsp; </span>
             <asp:Label ID="Label1" runat="server" Text="Código del medicamento: " CssClass="auto-style1"></asp:Label>
-&nbsp; <asp:TextBox ID="TextBoxcodigo" runat="server" Width="135px" BackColor="#CCFFFF" CssClass="auto-style1"></asp:TextBox>
+&nbsp; 
+            <asp:DropDownList ID="DropDownList1" runat="server" Height="21px" style="font-size: large; background-color: #CCFFFF" Width="136px">
+            </asp:DropDownList>
+&nbsp;&nbsp;&nbsp; <asp:Button ID="Button4" runat="server" Text="Visualizar" Width="192px" OnClick="Button4_Click" BackColor="#99CCFF" CssClass="auto-style1" />
         </p>
         <p>
             <span class="auto-style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nombre del medicamento: &nbsp; </span><asp:TextBox ID="TextBoxnombre" runat="server" Width="135px" BackColor="#CCFFFF" CssClass="auto-style1"></asp:TextBox>
@@ -63,14 +68,12 @@
         <br class="auto-style1" />
         <span class="auto-style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </span>
-        <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Agregar Medicamento" Width="191px" BackColor="#99CCFF" CssClass="auto-style1" />
-        <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Button ID="Button4" runat="server" OnClick="Button4_Click" Text="Editar Medicamento" Width="191px" BackColor="#99CCFF" CssClass="auto-style1" />
+        <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Editar Medicamento" Width="191px" BackColor="#99CCFF" CssClass="auto-style1" />
         <br class="auto-style1" />
         <br class="auto-style1" />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Regresar al inicio" BackColor="#99CCFF" CssClass="auto-style1" />
+        <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Regresar" BackColor="#99CCFF" CssClass="auto-style1" />
+        </div>
     </form>
 </body>
 </html>

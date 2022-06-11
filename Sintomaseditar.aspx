@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Sintomas.aspx.cs" Inherits="Consultorio_Medico.Sintomas1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Sintomaseditar.aspx.cs" Inherits="Consultorio_Medico.Sintomaseditar" %>
 
 <!DOCTYPE html>
 
@@ -16,7 +16,9 @@
         </div>
         <p>
             &nbsp;<asp:Label ID="Label2" runat="server" Font-Size="Large" ForeColor="Black" Text="Codigo del sintoma:   "></asp:Label>
-            <asp:TextBox ID="TextBoxCodigoSintoma" runat="server" BackColor="#CCFFFF" Font-Size="Large"></asp:TextBox>
+            <asp:DropDownList ID="DropDownList1" runat="server" Height="23px" style="font-size: large; background-color: #CCFFFF" Width="166px">
+            </asp:DropDownList>
+&nbsp;&nbsp; <asp:Button ID="Button3" runat="server" Text="Visualizar" OnClick="Button3_Click" BackColor="#CCFFFF" Font-Size="Large" ForeColor="Black" />
         </p>
         <p>
             <asp:Label ID="Label3" runat="server" Font-Size="Large" ForeColor="Black" Text="Nombre del sintoma:   "></asp:Label>
@@ -32,10 +34,7 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:Button ID="Button1" runat="server" Text="Agregar Sintoma" OnClick="Button1_Click1" BackColor="#CCFFFF" Font-Size="Large" ForeColor="Black" />
         </p>
         <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Button ID="Button3" runat="server" Text="Editar Sintoma" OnClick="Button3_Click" BackColor="#CCFFFF" Font-Size="Large" ForeColor="Black" />
-            &nbsp;</p>
-        <p>
-            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Regresar al inicio" BackColor="#CCFFFF" Font-Size="Large" />
+            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Regresar" BackColor="#CCFFFF" Font-Size="Large" style="width: 112px" />
         </p>
     </form>
 </body>

@@ -28,7 +28,7 @@ namespace Consultorio_Medico
             var identidad = (FormsIdentity)Context.User.Identity;
             if (identidad.Ticket.UserData != "2")
             {
-                Response.Redirect("Contact", true);
+                Response.Redirect("default", true);
             }
             string archivo = Server.MapPath("Pacientes.json");
             StreamReader jsonStream = File.OpenText(archivo);

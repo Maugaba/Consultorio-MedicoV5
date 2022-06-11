@@ -15,11 +15,7 @@ namespace Consultorio_Medico
         static List<Sintomas> listsintomas = new List<Sintomas>();
         protected void Page_Load(object sender, EventArgs e)
         {
-            var identidad = (FormsIdentity)Context.User.Identity;
-            if (identidad.Ticket.UserData != "2")
-            {
-                Response.Redirect("Contact", true);
-            }
+
         }
 
         void Guardar_Json()
@@ -46,6 +42,11 @@ namespace Consultorio_Medico
         protected void Button2_Click(object sender, EventArgs e)
         {
             Response.Redirect("default", true);
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Sintomaseditar", true);
         }
     }
 }

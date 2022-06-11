@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Web;
+using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -18,6 +19,11 @@ namespace Consultorio_Medico
         List<Sintomas> sintomas = new List<Sintomas>();
         protected void Page_Load(object sender, EventArgs e)
         {
+            var identidad = (FormsIdentity)Context.User.Identity;
+            if (identidad.Ticket.UserData != "2")
+            {
+                Response.Redirect("Default", true);
+            }
             string archivo = Server.MapPath("Enfermedades.json");
             StreamReader jsonStream = File.OpenText(archivo);
             string json = jsonStream.ReadToEnd();
